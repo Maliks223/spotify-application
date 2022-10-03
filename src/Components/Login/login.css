@@ -8,16 +8,14 @@
 .loginButtonContainer {
   cursor: pointer;
   display: flex;
+  align-items: center;
   border: 1px solid rgb(148, 148, 148);
   border-radius: 6px;
   background-color: white;
   height: 5rem;
   width: 30rem;
 }
-.loginButtonContainer:hover {
-  opacity: 0.8;
-  border: 1px solid rgb(54, 53, 53);
-}
+
 .buttonImgWrapper {
   display: flex;
   align-items: center;
