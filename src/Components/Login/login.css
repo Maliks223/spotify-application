@@ -6,6 +6,8 @@
   padding: 25px;
 }
 .loginButtonContainer {
+  text-decoration: none;
+  color: black;
   cursor: pointer;
   display: flex;
   align-items: center;
