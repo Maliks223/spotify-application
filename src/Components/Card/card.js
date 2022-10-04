@@ -1,23 +1,26 @@
 import React from "react";
 import "./card.css";
-import obama2 from "../../Assets/Images/Login.jpg"
+import DefaultImage from "../../Assets/Images/DefaultImg.jpg";
 
-
-const Card = () => {
-
-  
-
+const Card = (props) => {
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
   return (
     <div className="card">
       <div className="topCard">
         <div>
-          <img className="cardImg" src={obama2} alt="Artist" />
+          {props.image ? (
+            <img className="cardImg" src={props.image} alt="Artist" />
+          ) : (
+            <img className="cardImg" src={DefaultImage} alt="Artist" />
+          )}
         </div>
       </div>
       <div className="bottomCard">
-        <div className="artistName">Obama</div>
-        <div className="artistFollowers">10,000 followers </div>
-        <div className="artistRating"> ⭐⭐⭐⭐⭐</div>
+        <div className="artistName">{props.name}</div>
+        <div className="artistFollowers">{numberWithCommas(props.followers)} followers</div>
+        <div className="artistRating">{props.rate}</div>
       </div>
     </div>
   );

@@ -1,12 +1,24 @@
 .homeContainer {
   display: flex;
-  /* justify-content: center; */
+  animation: load .5s ease-in-out 1;
   flex-direction: column;
   align-items: center;
 }
 
 .cardContainer{
-  /* background-color: green; */
+  animation: load 1.5s ease-in-out 1;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 90%;
+ min-height: 100vh;
+}
+
+.cardAlbumsContainer{
+  /* margin-top: 2rem; */
+  margin: auto;
+  animation: load 1.5s ease-in-out 1;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
