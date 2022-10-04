@@ -1,35 +1,39 @@
-.card {
-  height: 29rem;
-  width: 18rem;
-  margin: 3rem;
-  background-color: white;
-  border: 0.5px solid rgb(153, 153, 153);
+.card:hover {
 }
 .topCard {
-  height: 60%;
-  border-bottom: 1.8px solid rgb(143, 142, 142);
+  height: 289px;
 }
 .cardImg {
   object-fit: cover;
-  height: 289px;
+  height: 100%;
   width: 100%;
 }
 .bottomCard {
-  height: 40%;
+  padding: 1rem;
 }
 .artistName {
+  text-decoration: none;
   font-size: 28px;
-  padding-top: 2rem;
-  padding-left: 1rem;
 }
 .artistFollowers {
-    color: rgb(143, 142, 142);
+  margin-top: 0.3rem;
+  color: rgb(143, 142, 142);
   font-size: 18px;
-  padding-left: 1rem;
 }
+
+.artistFollowers span {
+  margin-right: 0.5rem;
+}
+
 .artistRating {
-  width: 60%;
-  margin-left: 4rem;
-  margin-top: 3.5rem;
-  transform: scale(1.5);
+  margin-top: 2.5rem;
+  font-size: 1rem;
+}
+.totalTracks{
+  font-size: 1rem;
+
+  
+}
+.redirectLink{
+  background-color: green;
 }

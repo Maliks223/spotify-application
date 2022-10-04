@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./login.css";
 import { accessUrl } from "../../Config/spotify";
 import { useNavigate } from "react-router-dom";
@@ -8,11 +8,11 @@ export default function Login() {
   const navigate = useNavigate()
   const token = localStorage.getItem('token')
 
-  // useEffect(()=>{
-  //   if(token){
-  //     navigate('/artists')
-  //   }
-  // })
+  useEffect(()=>{
+    if(token){
+      navigate('/artists')
+    }
+  });
   return (
     <div className="loginContainer">
       <a href={accessUrl} className="loginButtonContainer">
