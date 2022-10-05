@@ -1,4 +1,3 @@
-
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 const clientId = "123a1aa1eeac4b7b91775e2be82f72b4";

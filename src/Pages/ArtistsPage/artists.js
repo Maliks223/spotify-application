@@ -29,9 +29,7 @@ const Artists = () => {
             setData(fetchedData.artists.items);
           }
         }
-      } catch (err) {
-        console.log(err);
-      }
+      } catch (err) {}
     };
     getAllArtists();
   }, [input]);

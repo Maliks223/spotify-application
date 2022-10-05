@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function TokenPage() {
   const [token, setToken] = useState("");
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const getToken = () => {
     const hash = window.location.hash;
-    // console.log("hash", hash);
     let token = window.localStorage.getItem("token");
 
     if (!token && hash) {
@@ -22,7 +21,7 @@ export default function TokenPage() {
     }
 
     setToken(token);
-    navigate('/artists')
+    navigate("/artists");
   };
 
   useEffect(() => {

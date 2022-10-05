@@ -14,7 +14,7 @@ export default function App() {
           <Route path="*" element={<TokenPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/artists" element={<Artists />} />
-          <Route path="/albums/:id" element={<Albums />} />
+          <Route path="/albums/:name/:id" element={<Albums />} />
         </Routes>
       </StateProvider>
     </BrowserRouter>

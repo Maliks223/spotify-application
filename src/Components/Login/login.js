@@ -4,13 +4,12 @@ import { accessUrl } from "../../Config/spotify";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  
-  const navigate = useNavigate()
-  const token = localStorage.getItem('token')
+  const navigate = useNavigate();
+  const token = localStorage.getItem("token");
 
-  useEffect(()=>{
-    if(token){
-      navigate('/artists')
+  useEffect(() => {
+    if (token) {
+      navigate("/artists");
     }
   });
   return (

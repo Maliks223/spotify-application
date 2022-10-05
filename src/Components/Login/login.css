@@ -37,11 +37,11 @@
   width: 45%;
 }
 
-@media(max-width:348px){
-  .loginButtonImg{
+@media (max-width: 348px) {
+  .loginButtonImg {
     margin-left: 10px;
   }
-  .buttonImgWrapper{
+  .buttonImgWrapper {
     margin-left: 30%;
   }
 }

@@ -3,10 +3,11 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Card from "../../Components/Card/card";
 import "../ArtistsPage/artists.css";
+import "./albums.css";
 // 0TnOYISbd1XYRBk9myaseg
 
 const Albums = () => {
-  const { id } = useParams();
+  const { id, name } = useParams();
 
   const [data, setData] = useState([]);
 
@@ -22,12 +23,8 @@ const Albums = () => {
       );
 
       const fetchedData = await result.json();
-      console.log("🚀 ~ file: albums.js ~ line 25 ~ getArtistAlbums ~ fetchedData", fetchedData.items)
       setData(fetchedData.items);
-      // console.log("maliks123", fetchedData.itmes);
-    } catch (err) {
-      console.log(err);
-    }
+    } catch (err) {}
   };
 
   useEffect(() => {
@@ -36,16 +33,23 @@ const Albums = () => {
 
   return (
     <div className="cardAlbumsContainer">
-      {data?.map((album) => (
-        <Card
-          albumImage={album.images[0]?.url}
-          albumName={album.name}
-          albumArtists={album.artists}
-          albumReleaseDate={album.release_date}
-          albumTracks={album.total_tracks}
-          // id={album.id}
-        />
-      ))}
+      <h1 className="artistAlbums">
+        {name} <br />
+        <p>Albums</p>
+      </h1>
+      <div className="cardsContainer">
+        {data?.map((album) => (
+          <Card
+            albumImage={album.images[0]?.url}
+            albumName={album.name}
+            albumArtists={album.artists}
+            albumReleaseDate={album.release_date}
+            albumTracks={album.total_tracks}
+            // id={album.id}
+            externalUrls={album.external_urls.spotify}
+          />
+        ))}
+      </div>
     </div>
   );
 };

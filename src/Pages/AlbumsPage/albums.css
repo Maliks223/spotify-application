@@ -1,0 +1,11 @@
+.artistAlbums {
+  margin: 2rem 0 3rem 9%;
+  height: fit-content;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+}
+.artistAlbums p {
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+  color: grey;
+}
