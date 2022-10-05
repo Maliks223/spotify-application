@@ -27,6 +27,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 7- View artist album on Spotify.
 
+8- A default Image is added in case the artist doesn't have ann image
+
 ### `Repository link on GitHub:`
 
 (https://github.com/Maliks223/spotify-application)
