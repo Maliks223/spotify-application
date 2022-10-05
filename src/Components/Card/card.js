@@ -10,8 +10,8 @@ const Card = (props, items) => {
   }
 
   return props?.withLink ? (
-    <Link to={`/albums/${props.name}/${props.id}`} className="link">
-      <div className="card">
+    <Link to={`/albums/${props.name}/${props.id}`} className="linkArtist">
+      <div className="cardArtist">
         <div className="topCard">
           {props.image ? (
             <img className="cardImg" src={props.image} alt="Artist" />
