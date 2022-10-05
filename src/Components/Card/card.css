@@ -4,6 +4,12 @@
   height: 100%;
   justify-content: space-between;
 }
+
+.cardArtist{
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+}
 .topCard {
   height: 289px;
 }
@@ -31,7 +37,7 @@
 
 .artistRating {
   color: rgb(143, 142, 142);
-  margin-top: 5rem;
+  margin-top: 1.5rem;
   font-size: 1.2rem;
 }
 .totalTracks {
